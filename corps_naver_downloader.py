@@ -14,4 +14,5 @@ for corp_cd in corp_list:
     print(f"{n} / {tot_n}")
     print(f"{corp_cd} : {corp_list[corp_cd]}")
     corps_naver_go(corp_cd)
+    
     n+=1
