@@ -8,7 +8,10 @@ cursor.execute(
     """
 )
 corp_list = {k:v for k,v in cursor.fetchall()}
-
+tot_n = len([*corp_list])
+n =1
 for corp_cd in corp_list:
+    print(f"{n} / {tot_n}")
     print(f"{corp_cd} : {corp_list[corp_cd]}")
     corps_naver_go(corp_cd)
+    n+=1
